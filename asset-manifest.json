@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crypto-market-task/static/css/main.26b61464.css",
+    "main.js": "/crypto-market-task/static/js/main.e8a4ed8e.js",
+    "static/media/Image.png": "/crypto-market-task/static/media/Image.c361ad5f6da1efbdc7cd.png",
+    "index.html": "/crypto-market-task/index.html",
+    "main.26b61464.css.map": "/crypto-market-task/static/css/main.26b61464.css.map",
+    "main.e8a4ed8e.js.map": "/crypto-market-task/static/js/main.e8a4ed8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26b61464.css",
+    "static/js/main.e8a4ed8e.js"
+  ]
+}
