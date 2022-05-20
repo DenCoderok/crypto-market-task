@@ -1,0 +1,87 @@
+@import '../../../variables/variables';
+
+.coinNameInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  margin-left: 20px;
+}
+
+.coinLogo {
+  border-radius: 50%;
+  background-color: #656C80;
+  color: #fff;
+  /*padding: 10px 14px;*/
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+}
+
+.coinName {
+  width: 80px;
+  line-height: 25px;
+  text-align: center;
+  @include SmallDarkText;
+}
+
+.coinSymbol {
+  width: 60px;
+  text-align: center;
+  @include SmallGreyText;
+}
+
+.lastPriceInfo {
+  width: 200px;
+  text-align: center;
+}
+
+.changePersentInfo {
+  width: 100px;
+  text-align: center;
+}
+
+.marketCapInfo {
+  width: 170px;
+  text-align: center;
+  margin-right: 150px;
+}
+
+
+@media (max-width: 768px) {
+  .marketCapInfo {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  .coinSymbol {
+    display: none;
+  }
+
+  .coinNameInfo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 570px) {
+  .marketCapInfo {
+    display: none;
+  }
+  .changePersentInfo {
+    margin-right: 15px;
+  }
+
+  .lastPriceInfo {
+    width: 100px;
+  }
+
+  .coinNameInfo {
+    margin-left: 10px;
+  }
+}
+
+
+
+

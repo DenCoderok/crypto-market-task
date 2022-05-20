@@ -1,0 +1,54 @@
+@import '../../variables/variables';
+
+.introWrapper {
+  max-width: $max-width;
+  margin: 0 auto 30vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introTextBlock {
+  max-width: 410px;
+  margin: auto 0;
+}
+
+.introImg {
+  min-width: 350px;
+  width: 100%;
+  display: block;
+}
+
+.introText {
+  @include HeadLine;
+  font-size: 50px;
+  line-height: 62px;
+  color: $main-dark-color;
+}
+
+@media (max-width: 850px) {
+  .introText {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .introImg {
+    display: none;
+  }
+
+  .introTextBlock {
+    max-width: unset;
+  }
+
+  .introText {
+    text-align: center;
+    line-height: 40px;
+    font-size: 32px;
+  }
+
+  .introWrapper {
+    margin: 20vh auto 15vh;
+  }
+
+}

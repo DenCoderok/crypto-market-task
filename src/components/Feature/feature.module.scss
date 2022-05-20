@@ -1,0 +1,59 @@
+@import '../../variables/variables';
+
+.feature__wrapper_main {
+  background-color: $main-grey-color;
+}
+
+.feature__wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.feature__wrapper_headLine {
+  @include HeadLine;
+  font-size: 35px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.feature__wrapper_textInfo {
+  @include SmallGreyText;
+  font-size: 18px;
+  text-align: center;
+  line-height: 27px;
+  margin: 50px auto 80px;
+  padding: 0 20px;
+}
+
+.feature__wrapper_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media (max-width: 1000px) {
+
+  .feature__wrapper_items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .feature__wrapper_headLine {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+
+  .feature__wrapper_textInfo {
+    font-size: 16px;
+    margin: 50px auto;
+  }
+
+}
+
+

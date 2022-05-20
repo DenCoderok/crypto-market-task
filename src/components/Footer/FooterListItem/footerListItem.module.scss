@@ -1,0 +1,34 @@
+@import '../../../variables/variables';
+
+.footer__listItems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+  width: 100px;
+}
+
+.footer__listItem_headLine {
+  @include SmallDarkText;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__listItem {
+  @include SmallGreyText;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+/*
+@media (max-width: 640px) {
+ .footer__listItems {
+   margin-bottom: 20px;
+ }
+}
+*/

@@ -1,0 +1,133 @@
+@import '../../variables/variables';
+
+.trends__wrapper {
+  margin: auto;
+  max-width: $max-width;
+}
+
+.trends__wrapper_headLine {
+  @include HeadLine;
+  font-size: 35px;
+  line-height: 43px;
+  margin-bottom: 70px;
+  padding: 0 20px;
+}
+
+.trends__wrapper_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trends__wrapper_coin_info,
+.trends__wrapper_coin_headLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trends__wrapper_coin_headLine {
+  margin-bottom: 30px;
+}
+
+.trends__wrapper_coin_info {
+  padding: 12px 0;
+}
+
+.trends__wrapper_coin_info:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+
+.trends__wrapper_coin_headLine_name,
+.trends__wrapper_coin_headLine_price,
+.trends__wrapper_coin_headLine_change,
+.trends__wrapper_coin_headLine_cap {
+  @include SmallGreyText;
+}
+
+.trends__wrapper_coin_headLine_name {
+  width: 250px;
+  padding-left: 20px;
+}
+
+.trends__wrapper_coin_headLine_price {
+  width: 200px;
+  text-align: center;
+}
+.trends__wrapper_coin_headLine_change {
+  width: 100px;
+  text-align: center;
+
+}
+
+.trends__wrapper_coin_headLine_cap {
+  width: 170px;
+  text-align: center;
+  margin-right: 150px;
+}
+
+.btn__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showMoreBtn {
+  @include HeadLine;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  margin: 50px auto;
+  background-color: $main-blue-color;
+  border-radius: 5px;
+  border: 1px solid $main-blue-color;
+  transition: ease .3s;
+  &:hover {
+    background-color: #fff;
+    color: $main-blue-color;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .trends__wrapper_coin_headLine_cap {
+    margin-right: 30px;
+  }
+
+}
+
+@media (max-width: 670px) {
+  .trends__wrapper_coin_headLine_name {
+    width: 150px;
+  }
+}
+
+@media (max-width: 570px) {
+
+  .trends__wrapper_headLine {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .trends__wrapper_coin_headLine_cap {
+    display: none;
+  }
+  .trends__wrapper_coin_headLine_name {
+    padding-left: 10px;
+  }
+  .trends__wrapper_coin_headLine_price {
+    width: 100px;
+  }
+
+  .trends__wrapper_coin_headLine_change {
+    margin-right: 10px;
+  }
+
+  .showMoreBtn {
+    padding: 10px 100px;
+  }
+}
+

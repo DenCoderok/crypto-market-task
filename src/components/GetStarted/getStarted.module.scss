@@ -1,0 +1,50 @@
+@import '../../variables/variables';
+
+.getStarted__wrapper_main {
+  margin-top: 130px;
+  padding: 130px 20px;
+  background-color: $main-grey-color;
+}
+
+.getStarted__wrapper {
+  max-width: $max-width;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.getStarted__wrapper_headLine {
+  @include HeadLine;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.getStarted__wrapper_btn {
+  @include HeadLine;
+  font-size: 15px;
+  color: #fff;
+  background-color: $main-blue-color;
+  border: 1px solid $main-blue-color;
+  border-radius: 5px;
+  padding: 15px 35px;
+  cursor: pointer;
+  transition: ease .3s;
+  &:hover {
+    background-color: $main-grey-color;
+    color: $main-blue-color;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .getStarted__wrapper_main {
+    margin-top: 70px;
+    padding: 70px 20px;
+  }
+}
+
+
